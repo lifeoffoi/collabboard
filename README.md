@@ -6,6 +6,25 @@ React.memo, useCallback, FileReader, and nested relational data.
 
 ---
 
+## Table of Contents
+
+1. [How to Run](#how-to-run)
+2. [Project Structure](#project-structure)
+3. [createEntityAdapter](#createentityadapter)
+4. [createSelector (Memoised Selectors)](#createselector-memoised-selectors)
+5. [Optimistic Updates](#optimistic-updates)
+6. [useDebounce](#usedebounce)
+7. [usePolling](#usepolling)
+8. [React.memo and useCallback](#reactmemo-and-usecallback)
+9. [FileReader API (Profile Picture Upload)](#filereader-api-profile-picture-upload)
+10. [Dynamic Form Arrays (Subtasks)](#dynamic-form-arrays-subtasks)
+11. [Context API with useReducer (Auth pattern)](#context-api-with-usereducer-auth-pattern--like-movies-app)
+12. [PrivateRoute and PublicRoute with Outlet](#privateroute-and-publicroute-with-outlet)
+13. [Pagination (Client-side)](#pagination-client-side)
+14. [Key Files to Study](#key-files-to-study)
+
+---
+
 ## How to Run
 
 ```bash
