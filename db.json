@@ -1,0 +1,38 @@
+{
+  "users": [
+    { "id": "1", "name": "Janice", "email": "janice@collabboard.com", "password": "password123", "role": "admin", "avatar": "" },
+    { "id": "2", "name": "Spencer", "email": "spencer@collabboard.com", "password": "password123", "role": "user", "avatar": "" },
+    { "id": "3", "name": "Alex", "email": "alex@collabboard.com", "password": "password123", "role": "user", "avatar": "" }
+  ],
+  "projects": [
+    { "id": "1", "title": "Website Redesign", "description": "Redesign the company website with modern UI", "dueDate": "2026-06-30", "status": "active", "ownerId": "1", "members": ["1", "2", "3"] },
+    { "id": "2", "title": "Mobile App MVP", "description": "Build the first version of our mobile application", "dueDate": "2026-07-15", "status": "active", "ownerId": "1", "members": ["1", "2"] },
+    { "id": "3", "title": "API Integration", "description": "Integrate third-party payment APIs", "dueDate": "2026-05-20", "status": "archived", "ownerId": "2", "members": ["2", "3"] }
+  ],
+  "tasks": [
+    { "id": "1", "projectId": "1", "title": "Design homepage mockup", "description": "Create Figma mockups for the homepage", "assigneeId": "2", "priority": "high", "status": "in-progress", "dueDate": "2026-06-10", "createdAt": "2026-05-01" },
+    { "id": "2", "projectId": "1", "title": "Set up React project", "description": "Initialize the project with Vite and install dependencies", "assigneeId": "1", "priority": "high", "status": "completed", "dueDate": "2026-06-05", "createdAt": "2026-05-02" },
+    { "id": "3", "projectId": "1", "title": "Write unit tests", "description": "Cover all components with tests", "assigneeId": "3", "priority": "medium", "status": "pending", "dueDate": "2026-06-25", "createdAt": "2026-05-03" },
+    { "id": "4", "projectId": "2", "title": "Define API contracts", "description": "Document all REST endpoints", "assigneeId": "1", "priority": "high", "status": "pending", "dueDate": "2026-06-20", "createdAt": "2026-05-04" },
+    { "id": "5", "projectId": "2", "title": "Build login screen", "description": "Implement auth screens for mobile", "assigneeId": "2", "priority": "medium", "status": "in-progress", "dueDate": "2026-06-28", "createdAt": "2026-05-05" }
+  ],
+  "subtasks": [
+    { "id": "1", "taskId": "1", "title": "Research competitor sites", "done": true },
+    { "id": "2", "taskId": "1", "title": "Create colour palette", "done": true },
+    { "id": "3", "taskId": "1", "title": "Design desktop layout", "done": false },
+    { "id": "4", "taskId": "1", "title": "Design mobile layout", "done": false },
+    { "id": "5", "taskId": "2", "title": "Install Vite", "done": true },
+    { "id": "6", "taskId": "2", "title": "Configure ESLint", "done": true }
+  ],
+  "comments": [
+    { "id": "1", "taskId": "1", "authorId": "1", "text": "Great progress on the mockups!", "createdAt": "2026-05-20T10:00:00Z" },
+    { "id": "2", "taskId": "1", "authorId": "2", "text": "I will have the desktop layout done by Friday.", "createdAt": "2026-05-21T09:30:00Z" },
+    { "id": "3", "taskId": "2", "authorId": "3", "text": "Project is set up and ready to go.", "createdAt": "2026-05-22T14:00:00Z" }
+  ],
+  "activityFeed": [
+    { "id": "1", "userId": "1", "action": "created project Website Redesign", "createdAt": "2026-05-01T08:00:00Z" },
+    { "id": "2", "userId": "2", "action": "updated task Design homepage mockup to in-progress", "createdAt": "2026-05-10T10:00:00Z" },
+    { "id": "3", "userId": "1", "action": "completed task Set up React project", "createdAt": "2026-05-15T12:00:00Z" },
+    { "id": "4", "userId": "3", "action": "commented on Design homepage mockup", "createdAt": "2026-05-22T14:00:00Z" }
+  ]
+}
